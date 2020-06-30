@@ -13,7 +13,7 @@ body {
 }
 
 #experience input {
-    text-align: center;
+    /* text-align: center; */
     margin: 0px 5% 0px 5%;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 #technicalProjects input {
-    text-align: center;
+    /* text-align: center; */
     margin: 0px 5% 0px 5%;
 }
 
