@@ -18,7 +18,7 @@ input, textarea{
 }
 
 #experience input {
-    text-align: center;
+    /* text-align: center; */
     margin: 0px 5% 0px 5%;
     margin-top: 0.5%;
 }
@@ -33,7 +33,7 @@ input, textarea{
 }
 
 #technicalProjects input {
-    text-align: center;
+    /* text-align: center; */
     margin: 0px 5% 0px 5%;
 }
 
