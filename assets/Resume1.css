@@ -1,0 +1,71 @@
+body {
+  font-family: "Montserrat";
+}
+
+.page-header {
+  background-color: #a8dadc;
+}
+h3 {
+  margin-top: -10px;
+  margin-bottom: 0px;
+  margin-left: 1em;
+}
+.h1 {
+  margin-bottom: 0px;
+}
+
+.name {
+  padding-left: 1em;
+  padding-top: 0.5em;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+
+  font-size: 2em;
+}
+.col-md-4 {
+  background-color: rgb(250, 245, 245);
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
+}
+.equal {
+  height: 100px;
+}
+.resume-header {
+  background-color: #6a8bb4;
+  padding-bottom: 0px;
+}
+.Skills {
+  background-color: #e6f2f5;
+}
+ul li {
+  padding: 0.5em;
+  list-style: none;
+}
+ul p {
+  margin-left: 0.5em;
+}
+li {
+  padding: 0.5em;
+}
+.summary {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 2em;
+  background-color: #f0efeb;
+}
+.summary h3 {
+  margin-top: -10px;
+  margin-bottom: 3px;
+  padding-bottom: 1em;
+}
+.col-md-8 {
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
+}
+.work {
+  padding-top: 1em;
+  padding-left: 2em;
+}
