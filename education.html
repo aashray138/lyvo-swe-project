@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Education</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/template.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/sexysphere.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars" style="padding-top: 7px;"></i>
+      </span>
+      <a href="#home" class="logo">
+        <img
+          src="./assets/logo.png"
+          style="width: 280px; height: 50px; margin-left: 0; float: left;"
+          ;
+      /></a>
+
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#aboutus" class="nav-links" style="padding: 5px;">
+            About Us</a
+          >
+        </li>
+
+        <li>
+          <a href="#contactUs" class="nav-links" style="padding: 5px;"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#singup" class="nav-links buttons">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+    </script>
+
+    <div class="content_body">
+      <div class="headline">
+        <h2 class="personal_head">Education</h2>
+        <p class="head_text">
+          Add your education background from the latest to the earliest.
+        </p>
+      </div>
+
+      <div class="form">
+        <form method="post" action="education_action.php">
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                name="school"
+                class="form-control"
+                placeholder="School Name"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                name="city"
+                class="form-control"
+                placeholder="City"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                name="state"
+                class="form-control"
+                placeholder="State"
+              />
+            </div>
+            <div class="col">
+              <select class="form-control" name="edu_form">
+                <option>Select a degree</option>
+                <option>High School Diploma</option>
+                <option>Undergraduate</option>
+                <option>Masters</option>
+                <option>Ph.D.</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="label">Field of Study</div>
+              <input
+                type="text"
+                name="study"
+                class="form-control"
+                placeholder="e.g. Engineering"
+              />
+            </div>
+            <div class="col">
+              <div class="label">Graduation date</div>
+              <input type="text" name="date" class="form-control" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <div class="attending">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="present_ed"
+                  />
+                  <label class="form-check-label" for="defaultCheck1">
+                    I presently attend here.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row next_btn">
+            <button class="nx_btn" type="submit">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

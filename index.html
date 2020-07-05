@@ -1,54 +1,76 @@
-<!DOCTYPE html>
-<html>
 <head>
-	<title>Resume Builder App</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/template.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/sexysphere.css" />
 </head>
+
 <body>
-	<div class ="header">
-		<img src = "./assets/logo.png" />
-	</div>
-	<div class="container">
-		<div id="basicInfo">
-			<form action="">
-				<input type="info" name="name" id="fullName" placeholder="Full Name">
-				<input type="info" name="address" id="address" placeholder="Address">
-				<input type="info" name="email" id="email" placeholder="Email">
-				<input type="info" name="number" id="phoneNumber" placeholder="Phone Number">
-			</form>
-		</div>
-		<div id="experience">
-			<form action="">
-				<input type="experience" name="exp1Position" id="exp1Position" placeholder="Position">
-				<input type="experience" name="exp2Position" id="exp2Position" placeholder="Position">
-				<input type="experience" name="exp3Position" id="exp3Position" placeholder="Position"><br>
-				<input type="experience" name="exp1CompanyName" id="exp1CompanyName" placeholder="Company Name">
-				<input type="experience" name="exp2CompanyName" id="exp2CompanyName" placeholder="Company Name">
-				<input type="experience" name="exp3CompanyName" id="exp3CompanyName" placeholder="Company Name"><br>
-				<textarea name="exp1Description" id="exp1Description" cols="50" rows="7" placeholder="Description"></textarea>
-				<textarea name="exp2Description" id="exp2Description" cols="50" rows="7" placeholder="Description"></textarea>
-				<textarea name="exp3Description" id="exp3Description" cols="50" rows="7" placeholder="Description"></textarea>
-			</form>
-		</div>
-		<div id="technicalProjects">
-			<form action="">
-				<input type="techPro" name="techPro1" id="techPro1" placeholder="Project">
-				<input type="techPro" name="techPro2" id="techPro2" placeholder="Project">
-				<input type="techPro" name="techPro3" id="techPro3" placeholder="Project"><br>
-				<textarea name="techPro1Description" id="techPro1Description" cols="50" rows="7" placeholder="Description"></textarea>
-				<textarea name="techPro2Description" id="techPro2Description" cols="50" rows="7" placeholder="Description"></textarea>
-				<textarea name="techPro3Description" id="techPro3Description" cols="50" rows="7" placeholder="Description"></textarea>
-			</form>
-		</div>
-		<div id="education">
-			<form action="">
-				<input type="education" name="college1" id="college1" placeholder="College">
-				<input type="education" name="college2" id="college2" placeholder="High School"><br>
-				<textarea name="techPro1Description" id="techPro1Description" cols="50" rows="7" placeholder="Description"></textarea>
-				<textarea name="techPro2Description" id="techPro2Description" cols="50" rows="7" placeholder="Description"></textarea>
-			<form action="">
-		</div>
-	</div>
-	<script src="script.js"></script>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+    <i class="fa fa-bars" style="padding-top:7px;"></i>
+    </span>
+        <a href="#index.html" class="logo">
+            <img src="./assets/logo.png" style="width: 280px;height:50px; margin-left:0; float:left" ;></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#aboutus" class="nav-links" style="padding :5px;"> About Us</a>
+            </li>
+
+            <li>
+                <a href="#contactUs" class="nav-links" style="padding :5px;">Contact Us</a>
+            </li>
+            <li>
+                <a href="#singup" class="nav-links buttons ">Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+        });
+    </script>
+
+    <div class="templates-layout">
+        <h2 class="head_template">Choose your template</h2>
+        <div class="template_design">
+            <div class="template1">
+                <a href="personal_info.html">
+                    <img class="tem_thumbnail" id=1 src="assets/bio1.jpg">
+                </a>
+                <a href="personal_info.html">
+                    <img class="tem_thumbnail" id=2 src="assets/bio2.jpg">
+                </a>
+            </div>
+            <div class="template2">
+                <a href="personal_info.html">
+                    <img class="tem_thumbnail" id=3 src="assets/bio3.jpg">
+                </a>
+                <a href="personal_info.html">
+                    <img class="tem_thumbnail" id=4 src="assets/bio4.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer here-->
+    <section>
+        <h3></h3>
+    </section>
+    <div class="footer">
+        <div id="button"></div>
+        <div id="container">
+            <div id="cont">
+                <div class="footer_center">
+                    <h3>Footer</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

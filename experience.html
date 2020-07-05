@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Experience</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./assets/template.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/sexysphere.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars" style="padding-top: 7px;"></i>
+      </span>
+        <a href="#index.html" class="logo">
+            <img src="./assets/logo.png" style="width: 280px; height: 50px; margin-left: 0; float: left;" ; /></a>
+
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#aboutus" class="nav-links" style="padding: 5px;">
+            About Us</a
+          >
+        </li>
+
+        <li>
+          <a href="#contactUs" class="nav-links" style="padding: 5px;"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#singup" class="nav-links buttons">Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+        navBarToggle.addEventListener("click", function() {
+            mainNav.classList.toggle("active");
+        });
+    </script>
+
+    <div class="content_body">
+        <div class="headline">
+            <h2 class="personal_head">Experience</h2>
+            <p class="head_text">
+                Add your work experience from the latest to the earliest.
+            </p>
+        </div>
+
+
+        <div class="form">
+            <form action="exp_action.php" method="POST">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="ename" class="form-control" placeholder="Employer" />
+                    </div>
+                    <div class="col">
+                        <input type="text" name="title" class="form-control" placeholder="Job Title" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="city" class="form-control" placeholder="City" />
+                    </div>
+                    <div class="col">
+                        <input type="text" name="state" class="form-control" placeholder="State" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="label">Start date</div>
+                        <input type="month" name="start" class="form-control" placeholder="sdate" />
+                    </div>
+                    <div class="col">
+                        <div class="label">End date</div>
+                        <input type="month" name="end" class="form-control" placeholder="edate" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea id="job_desc" name="desc" placeholder="Job Description"></textarea>
+                    </div>
+                </div>
+
+                <hr/>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="ename" class="form-control" placeholder="Employer" />
+                    </div>
+                    <div class="col">
+                        <input type="text" name="title" class="form-control" placeholder="Job Title" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="city" class="form-control" placeholder="City" />
+                    </div>
+                    <div class="col">
+                        <input type="text" name="state" class="form-control" placeholder="State" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="label">Start date</div>
+                        <input type="month" name="start" class="form-control" placeholder="sdate" />
+                    </div>
+                    <div class="col">
+                        <div class="label">End date</div>
+                        <input type="month" name="end" class="form-control" placeholder="edate" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea id="job_desc" name="desc" placeholder="Job Description"></textarea>
+                    </div>
+                </div>
+                <div class="row next_btn">
+                    <button class="nx_btn" type="submit">Next</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skills</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/template.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/sexysphere.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars" style="padding-top: 7px;"></i>
+      </span>
+      <a href="#home" class="logo">
+        <img
+          src="./assets/logo.png"
+          style="width: 280px; height: 50px; margin-left: 0; float: left;"
+          ;
+      /></a>
+
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#aboutus" class="nav-links" style="padding: 5px;">
+            About Us</a
+          >
+        </li>
+
+        <li>
+          <a href="#contactUs" class="nav-links" style="padding: 5px;"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#singup" class="nav-links buttons">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+    </script>
+
+    <div class="content_body">
+      <div class="headline">
+        <h2 class="personal_head">Skills</h2>
+        <p class="head_text">Add your relevant top skills.</p>
+      </div>
+
+      <div class="form">
+        <form action="skills_action.php" method="POST">
+          <div class="row">
+            <div class="col">
+              <div class="label">Skill</div>
+              <input
+                type="text"
+                name="skill1"
+                class="form-control"
+                placeholder="e.g. Graphics Designing"
+              />
+            </div>
+            <div class="col">
+              <div class="label">Level</div>
+              <select name="level1" class="form-control">
+                <option>Select your skill level</option>
+                <option>Novice</option>
+                <option>Beginner</option>
+                <option>Skilled</option>
+                <option>Experienced</option>
+                <option>Expert</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="label">Skill</div>
+              <input
+                type="text"
+                name="skill2"
+                class="form-control"
+                placeholder="e.g. Teamworking"
+              />
+            </div>
+            <div class="col">
+              <div class="label">Level</div>
+              <select name="select_form2" class="form-control">
+                <option>Select your skill level</option>
+                <option>Novice</option>
+                <option>Beginner</option>
+                <option>Skilled</option>
+                <option>Experienced</option>
+                <option>Expert</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="label">Skill</div>
+              <input
+                type="text"
+                name="skill3"
+                class="form-control"
+                placeholder="e.g. HTML"
+              />
+            </div>
+            <div class="col">
+              <div class="label">Level</div>
+              <select name="select_form3" class="form-control">
+                <option>Select your skill level</option>
+                <option>Novice</option>
+                <option>Beginner</option>
+                <option>Skilled</option>
+                <option>Experienced</option>
+                <option>Expert</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row next_btn">
+            <button class="nx_btn" type="submit">Next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
