@@ -1,0 +1,48 @@
+body {
+    margin-left: 0.25in;
+    margin-right: 0.25in;
+}
+
+.page-header {
+    border: none;
+    margin: none;
+}
+
+.iconButton {
+    background-color: lightgray;
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+}
+
+.skillSet {
+    background-color: lightgray;
+    border-radius: 6px;
+    border-radius: default;
+    width: 4px;
+}
+
+.iconSet {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.iconSet2 {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7%;
+}
+
+.center {
+    text-align: left;
+}
+
+.padZero {
+    padding: 1%;
+}
+
+.padNone {
+    padding: none;
+}
